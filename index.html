@@ -1,379 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>55bbs-我爱购物网</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
-	<meta content="telephone=no" name="format-detection" />
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="css/setmystyle.css">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-	<div class="main">
-		<div class="loading" id="loading">
-		    <div class="circle"></div>
-		    <div class="circle1"></div>
-		</div>
-		<i class="ud_box up_icon" style="display:none;"></i>
-		<div id="music_box" class="m_act" style="display:none;"></div>
-		<div class="swiper-container" style="display:none">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide page1">
-					<img src="images/page1-tit.png" alt="" class="page1-tit">
-					<div class="p1-layer">
-						<img src="images/p1-icon.png" alt="" class="p1-icon">
-					</div>
-				</div>
-				<div class="swiper-slide page2">
-					<div id="myvideo">
-                        &nbsp;
-                    </div>
-					<img src="images/p2-bag1.png" alt="" class="bag-show">
-					<ul class="bag-list cfx">
-						<li><img src="images/p2-bag1.png" alt="" info="喜马<br>拉雅"></li>
-						<li><img src="images/p2-bag2.png" alt="" info="黑色<br>鳄鱼"></li>
-						<li><img src="images/p2-bag3.png" alt="" info="橘红<br>鸵鸟皮"></li>
-						<li><img src="images/p2-bag4.png" alt="" info="白色<br>Lindy"></li>
-					</ul>
-					<p class="name-chage">
-						<b>喜马<br>拉雅</b>
-					</p>
-				</div>
-				<div class="swiper-slide page3">
-					<img src="images/p3-bag1.png" alt="" class="p3-bag1 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="2s" swiper-animate-delay="0s">
-					<img src="images/p3-bag2.png" alt="" class="p3-bag2 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-					<img src="images/p3-bag3.png" alt="" class="p3-bag3 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">
-					<img src="images/show-btn.png" alt="" class="show-btn" showobj="p3-show1">
-					<div class="show-box p3-show1">
-						<p>最具有代表性的Hermes经典手袋,皮质有90多种，包括牛皮、羊皮、猪皮，还有比较珍贵的鳄鱼皮、鸵鸟皮以及蜥蜴皮等，价格也相差很大。</p>
-						<i></i>
-					</div>
-					<img src="images/p3-person.png" alt="" class="p3-person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="1s">
-					<img src="images/close-person.png" alt="" class="close-person ani" swiper-animate-effect="rollIn" swiper-animate-duration="1.5s" swiper-animate-delay="2.5s">
-				</div>
-				<div class="swiper-slide page4">
-					<img src="images/p4-bag1.png" alt="" class="p4-bag1 ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">
-					<img src="images/p4-bag2.png" alt="" class="p4-bag2 ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-					<img src="images/p4-bag3.png" alt="" class="p4-bag3 ani" swiper-animate-effect="slideInUp" swiper-animate-duration="2s" swiper-animate-delay="0s">
-					<img src="images/p4-person.png" alt="" class="p4-person ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-					<img src="images/show-btn.png" alt="" class="show-btn" showobj="p4-show1">
-					<div class="show-box p4-show1">
-						<p>最代表的款式 这款手袋和摩纳哥王妃Grace Kelly的故事至今仍然是人们众口相传的时尚佳话，不同的皮质价格相差也很大。</p>
-						<i></i>
-					</div>
-				</div>
-				<div class="swiper-slide page5">
-					<img src="images/p5-bag1.png" alt="" class="p5-bag1 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-					<img src="images/p5-bag2.png" alt="" class="p5-bag2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-					<img src="images/p5-person1.png" alt="" class="p5-person1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">
-					<img src="images/p5-person2.png" alt="" class="p5-person2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-					<img src="images/show-btn.png" alt="" class="show-btn show-btn1" showobj="p5-show1">
-					<img src="images/show-btn.png" alt="" class="show-btn show-btn2" showobj="p5-show2">
-					<div class="show-box p5-show1">
-						<p>超级百搭款，包身是帆布，包盖是皮质的。与经典款Kelly长的有点相似，价格明显亲民很多。</p>
-						<i></i>
-					</div>
-					<div class="show-box p5-show2">
-						<p>经典的H扣复古挎包，人气仅次于Birkin和Kelly，绝对的搭配利器。</p>
-						<i></i>
-					</div>
-				</div>
-				<div class="swiper-slide page6">
-					<img src="images/p6-bag1.png" alt="" class="p6-bag1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">
-					<img src="images/p6-bag2.png" alt="" class="p6-bag2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="2s" swiper-animate-delay="0s">
-					<img src="images/p6-person1.png" alt="" class="p6-person1 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-					<img src="images/p6-person2.png" alt="" class="p6-person2 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">
-					<img src="images/show-btn.png" alt="" class="show-btn show-btn1" showobj="p6-show1">
-					<img src="images/show-btn.png" alt="" class="show-btn show-btn2" showobj="p6-show2">
-					<div class="show-box p6-show1">
-						<p>Hermes2000年发行的限量款。“各种萌萌哒，这只包一直在升值，之前买到过的伙伴们绝对是赚到了。</p>
-						<i></i>
-					</div>
-					<div class="show-box p6-show2">
-						<p>休闲舒适风格 实用款 适合轻装扮 搭配一条丝巾立马亮眼很多</p>
-						<i></i>
-					</div>
-				</div>
-				<div class="swiper-slide page7">
-					<img src="images/p7-bag1.png" alt="" class="p7-bag1 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">
-					<img src="images/p7-bag2.png" alt="" class="p7-bag2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-					<img src="images/p7-bag3.png" alt="" class="p7-bag3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.8s" swiper-animate-delay="0s">
-					<img src="images/p7-person1.png" alt="" class="p7-person1 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.8s" swiper-animate-delay="0s">
-					<img src="images/show-btn.png" alt="" class="show-btn show-btn1" showobj="p7-show1">
-					<img src="images/show-btn.png" alt="" class="show-btn show-btn2" showobj="p7-show2">
-					<div class="show-box p7-show1">
-						<p>Hermes近来的火爆人气款式，材质分别都有牛皮、小牛皮和帆布搭配牛皮等款式。</p>
-						<i></i>
-					</div>
-					<div class="show-box p7-show2">
-						<p>昵称菜篮子 ，长得是不是很像？也是明星们近年来大爱的款式，搭配最热的毛球挂饰，时尚指数绝对upupup！</p>
-						<i></i>
-					</div>
-				</div>
-				<div class="swiper-slide page8">
-					<img src="images/code1.png" alt="" class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">
-					<img src="images/code2.png" alt="" class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</body>
-<script src="js/swiper3.1.0.min.js"></script>
-<script src="js/swiper.animate1.0.2.min.js"></script>
-<script>
-window.onload = function(){
-	document.getElementById('loading').style.display = 'none';
-	document.querySelector('.swiper-container').style.display="block";
-	var vBox = document.getElementById('myvideo');
-	var mySwiper = new Swiper ('.swiper-container', {
-		direction : 'vertical',
-		speed:500,
-		resistanceRatio : 0,
-		onInit: function(swiper){
-			swiperAnimateCache(swiper); 
-			swiperAnimate(swiper);
-		},
-		onSlideChangeEnd: function(swiper){
-			swiperAnimate(swiper); 
-	      	if(swiper.activeIndex == document.querySelectorAll('.swiper-slide').length - 1){
-	      		document.querySelector('.ud_box').classList.remove('up_icon');
-	      		document.querySelector('.ud_box').classList.add('down_icon');
-		    }else{
-		    	document.querySelector('.ud_box').classList.remove('down_icon');
-	      		document.querySelector('.ud_box').classList.add('up_icon');
-		    };
-		    for(var i=0;i<aBtns.length;i++){
-		    	aBtns[i].showEle.style.display='none';
-		    	aBtns[i].showEle.classList.remove('showIn');
-				aBtns[i].showEle.classList.add('showOut');
-		    };
-		    if(swiper.activeIndex == 1){
-		    	vBox.style.display = 'block';
-		    }else{
-		    	vBox.style.display = 'none';
-		    }
-		}
-	});
-	mySwiper.lockSwipes();
-	//首页效果 start
-	var iCeils = 6,iRows = 8;
-	var aLi=[];
-	for(var i=0;i<iCeils;i++){
-		for(var j=0;j<iRows;j++){
-			var oli = document.createElement('li');
-			document.querySelector('.p1-layer').appendChild(oli);
-			aLi.push(oli);
-		}
-	}
-	var liw = getComputedStyle(document.querySelectorAll('.page1 li')[0],null)['width'];
-	var lih = getComputedStyle(document.querySelectorAll('.page1 li')[0],null)['height'];
-	var aXy=setXy(aLi,iCeils,iRows);
-	function layerRun(){
-		document.querySelector('.p1-icon').style.display='none';
-		setTimeout(function(){
-			document.querySelector('.page1-tit').classList.add('run');
-		},1000);
-		document.querySelector('.ud_box').style.display='block';
-		document.querySelector('#music_box').style.display='block';
-		bgmusic.play();
-		mySwiper.unlockSwipes();
-		toTab(aXy,iCeils-1,iRows-1,function(){
-				var _this = this;
-				with(this.style)
-				{
-					 transition="1s background,.2s border,.3s .15s box-shadow,2s .3s -webkit-transform,2s .3s opacity"; 
-					borderColor="rgba(0,0,0,0.6)";
-					boxShadow="0 0 20px #ff701a";
-					WebkitTransform="translate(-50px,-150px) rotateX(-720deg) rotateY(-360deg)";
-					opacity=0;
-				};
-				setTimeout(function(){
-					removeEle(_this);
-				},2000);
-		},120,-1,-1);
-	};
-	function toTab(aXy,x,y,fn,iDelay,iDisX,iDisY){
-		if(!aXy[y] || !aXy[y][x])
-		{
-			return;
-		}
-		if(fn)
-		{
-			fn.call(aXy[y][x]);
-			clearTimeout(aXy[y][x].timer);
-			aXy[y][x].timer=setTimeout(function(){
-				toTab(aXy,x+iDisX,y,fn,iDelay,iDisX,iDisY);
-				toTab(aXy,x,y+iDisY,fn,iDelay,iDisX,iDisY);
-			},iDelay)
-		}
-	}
-	function setXy(oBjs,iCeils,iRows){
-		var arr=[];
-		for(var i=0;i<iRows;i++)
-		{
-			var arr2=[];
-			for(var j=0;j<iCeils;j++)
-			{
-				oBjs[i*iCeils+j].xIndex=j;
-				oBjs[i*iCeils+j].yIndex=i;
-				oBjs[i*iCeils+j].style.backgroundPosition=-j*parseInt(liw)+"px -"+i*parseInt(lih)+"px";
-				arr2.push(oBjs[i*iCeils+j]);
-			}
-			arr.push(arr2);
-		}
-		
-		return arr;
-	};
-	//首页效果 end
-	// 手机摇一摇;
-	var SHAKE_THRESHOLD = 2000,shake_flog=false;
-	var last_update = 0;
-	var x = y = z = last_x = last_y = last_z = 0;
-	function deviceMotionHandler(eventData) {
-	    var acceleration = eventData.accelerationIncludingGravity;
-	    var curTime = new Date().getTime();
-	    if ((curTime - last_update) > 100&&shake_flog) {
-	        var diffTime = curTime - last_update;
-	        last_update = curTime;
-	        x = acceleration.x;
-	        y = acceleration.y;
-	        z = acceleration.z;
-	        var speed = Math.abs(x + y + z - last_x - last_y - last_z)/diffTime * 10000;
-	        if (speed > SHAKE_THRESHOLD) {
-	            layerRun();
-	            shake_flog=false;
-	        }
-	        last_x = x;
-	        last_y = y;
-	        last_z = z;
-	    }
-	}
-	// 判断设备是否支持 DeviceMotionEvent;
-	if (window.DeviceMotionEvent) {
-		shake_flog=true;
-	    window.addEventListener('devicemotion', deviceMotionHandler, false);
-	} else {
-		setTimeout(function(){
-			layerRun();
-		},1000)
-	};
-	// p2 imgchage
-	var allPicBtns = document.querySelectorAll('.bag-list img');
-	var picShow = document.querySelector('.bag-show');
-	var infoBox = document.querySelector('.name-chage b');
-	for(var i=0;i<allPicBtns.length;i++){
-		allPicBtns[i].addEventListener('click',function(){
-			picShow.src = this.src;
-			picShow.classList.add('picIn');
-			infoBox.innerHTML = this.getAttribute('info');
-			setTimeout(function(){
-				picShow.classList.remove('picIn');
-			},500)
-		},false)
-	}
-}
-// 阻止ios默认拖动;
-document.querySelector('body').addEventListener('touchmove',function(e){
-	e.preventDefault();
-},false);
 
-//恶心的无用操作
-function removeEle(removeObj) { 
-	removeObj.parentNode.removeChild(removeObj); 
-}
-document.querySelector('.close-person').addEventListener('click',function(){
-	removeEle(document.querySelector('.p3-person'));
-	removeEle(this);
-},false)
-//背景音乐 
-var bgmusic = new Audio();
-bgmusic.src = "images/musicbg.mp3";
-bgmusic.loop = true;
-bgmusic.autoplay = false;
-var flog = false;
-var musicBtn = document.querySelector('#music_box');
-musicBtn.addEventListener('click',function(){
-	if(flog == false){
-		this.className = '';
-		bgmusic.pause();
-		flog = true;
-	}else{
-		this.className = 'm_act';
-		bgmusic.play();
-		flog = false;
-	}
-},false);
-// 弹出文字
-var aShowObjs = document.querySelectorAll('.show-box');
-var aBtns = document.querySelectorAll('.show-btn');
-for(var i=0;i<aBtns.length;i++){
-	aBtns[i].showEle = document.querySelector('.'+aBtns[i].getAttribute('showobj'));
-	aBtns[i].showEle.addEventListener('click',function(){
-		var _this = this;
-		this.classList.remove('showIn');
-		this.classList.add('showOut');
-		setTimeout(function(){
-			_this.style.display='none';
-		},500)
-	});
-	aBtns[i].addEventListener('click',function(){
-		this.showEle.style.display='block';
-		this.showEle.classList.remove('showOut');
-		this.showEle.classList.add('showIn');
-	},false);
-}
-</script>
-<!-- 视频播放 -->
-<!-- 引入腾讯视频播放器组件 -->
-<script language="javascript" src="http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player.js"
-charset="utf-8">
-</script>
-<script language="javascript">
-    //定义视频对象
-    var video = new tvp.VideoInfo();
-    //向视频对象传入视频vid
-    video.setVid("q0171cgcili");
-    //定义播放器对象
-    var player = new tvp.Player();
-    //设置播放器初始化时加载的视频
-    player.setCurVideo(video);
-    //设置精简皮肤，仅点播有效
-    //player.addParam("flashskin", "http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf");
-    //输出播放器,参数就是上面div的id，希望输出到哪个HTML元素里，就写哪个元素的id
-    player.addParam("autoplay", "0");
-    player.addParam("webkit-playsinline", "true");
-    player.addParam("wmode", "transparent");
-    //player.addParam("pic","http://img1.gtimg.com/ent/pics/hv1/75/182/1238/80547435.jpg");
-    player.write("myvideo");
-    var videoEle = document.querySelector('#myvideo video');
-    videoEle.addEventListener('play',function(){
-    	document.querySelector('#music_box').className = '';
-      	bgmusic.pause();
-    },false);
-    videoEle.addEventListener('pause',function(){
-    	if(flog == false){
-	      	document.querySelector('#music_box').className = 'm_act';
-    		bgmusic.play();
-		}
-    },false);
-</script>
-<!-- 统计代码 -->
-<script>
-document.write("<img src='http://hm.baidu.com/hm.gif?si=d29dd8c9b0e6869b8bec5a5649c3991e&amp;et=0&amp;nv=0&amp;st=4&amp;lt="+new Date().getTime()+"&amp;v=wap-0-0.2&amp;rnd=1107555598' width='0' height='0'/><br><img src='http://wappv.55bbs.com/images/wap3g.gif?t="+new Date().getTime()+"&ubcat=&vuserid=0&url="+window.location.href+"&ref=&ip_ck="+document.referrer+" height='0' width='0'>");
-</script>
-<!-- 微信分享 -->
-<script>
-var wx_title="55FashionTV土豪都醉了！直击败家女王壕包间！";
-var wx_desc="55FashionTV土豪都醉了！直击败家女王壕包间！";
-var wx_imgurl="http://topic.55bbs.com/topic/special/topic/tv20151102/images/tv-share.jpg";
-var wx_shareurl=window.location.href;
-</script>
-<script src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
-<script>
-	document.write('<script src="http://topic.55bbs.com/api/ReturnJsCode.php?wx_shareurl='+encodeURIComponent(wx_shareurl)+'" type="text/javascript"><\/script>');
-</script>
+<div id="main">
+    <div class="load">
+        <img src="images/p1-icon.png" alt=""/>
+        <h2>come into my world</h2>
+    </div>
+    <div id="music_box" class="m_act" style="display:none"></div>
+    <div class="mian-bg">
+        <canvas id="star"></canvas>
+    </div>
+    <ul id="list">
+        <li>
+            <h3>我的简历</h3>
+            <p class="a0_icon1 ani" animate-effect="bounceIn" animate-duration="1s" animate-delay="0s"><em>基本信息</em></p>
+            <p class="a0_icon2 ani" animate-effect="bounceIn" animate-duration="1s" animate-delay="0.5s"><em>个人爱好</em></p>
+            <p class="a0_icon3 ani" animate-effect="bounceIn" animate-duration="1s" animate-delay="1s"><em>技术储备</em></p>
+            <p class="a0_icon4 ani" animate-effect="bounceIn" animate-duration="1s" animate-delay="1.5s"><em>工作经历</em></p>
+            <p class="a0_icon5 ani" animate-effect="bounceIn" animate-duration="1s" animate-delay="2s"><em>联系方式</em></p>
+            <div class="a0_font">
+                <p class="ani" animate-effect="slideInLeft" animate-duration="1s" animate-delay="2s">
+                    write the code
+                </p>
+                <p class="ani" animate-effect="slideInRight" animate-duration="1s" animate-delay="2.5s">
+                    change the world
+                </p>
+            </div>
+        </li>
+        <li>
+            <h3>基本信息</h3>
+            <div class="myphoto">
+                <img src="images/myphoto.png" alt=""/>
+                <div class="myname cfx">
+                    <h3 class="ani" animate-effect="fadeInDown" animate-duration="1s" animate-delay="0.5s">黄文娟</h3>
+                    <p class="ani" animate-effect="fadeInUp" animate-duration="1s" animate-delay="0.5s">huangwenjuan</p>
+                    <span class="ani" animate-effect="slideInRight" animate-duration="1s" animate-delay="1s"></span>
+                </div>
+            </div>
+            <div class="my-info">
+                <p class="ani" animate-effect="flipInX" animate-duration="1s" animate-delay="1.5s"><span>sex</span>女</p>
+                <p class="ani" animate-effect="flipInX" animate-duration="1s" animate-delay="1.8s"><span>age</span>24</p>
+                <p class="ani" animate-effect="flipInX" animate-duration="1s" animate-delay="2.1s"><span>myjob</span>web前端</p>
+                <p class="ani" animate-effect="flipInX" animate-duration="1s" animate-delay="2.4s"><span>school</span>河北科技师范学院</p>
+                <p class="ani" animate-effect="flipInX" animate-duration="1s" animate-delay="2.7s"><span>address</span>北京.昌平</p>
+            </div>
+        </li>
+        <li>
+            <h3 class="ani" animate-effect="bounceInUp" animate-duration="1.5s" animate-delay="0">个人爱好</h3>
+            <div class="ani" animate-effect="flash" animate-duration="2s" animate-delay="1s">
+                <p class="a3_1"><span>旅游</span></p>
+                <p class="a3_2"><span>美食</span></p>
+                <p class="a3_3"><span>看书</span></p>
+                <p class="a3_4"><span>睡觉</span></p>
+            </div>
+        </li>
+        <li>
+            <h3 class="ani" animate-effect="bounceInDown" animate-duration="1s" animate-delay="0s">I CAN</h3>
+            <p class="a4_1 ani" animate-effect="pulse" animate-duration="2s" animate-delay="0s">
+                <img src="images/css3.jpg" alt=""/>
+            </p>
+            <p class="a4_2 ani" animate-effect="pulse" animate-duration="3s" animate-delay="1s">
+                <img src="images/h5.jpg" alt=""/>
+            </p>
+            <p class="a4_3 ani" animate-effect="pulse" animate-duration="4s" animate-delay="0s">
+                <img src="images/js.jpg" alt=""/>
+            </p>
+            <p class="a4_4 ani" animate-effect="pulse" animate-duration="1s" animate-delay="0s">
+                <img src="images/ps.jpg" alt=""/>
+            </p>
+            <p class="a4_5 ani" animate-effect="pulse" animate-duration="3s" animate-delay="0s">
+                <img src="images/ws.png" alt=""/>
+            </p>
+        </li>
+        <li>
+            <img src="images/weixin_03.gif" alt="" class="ani" animate-effect="zoomIn" animate-duration="1s" animate-delay="0s"/>
+            <div class="contact_me">
+                <p class="ani" animate-effect="fadeInDown" animate-duration="1s" animate-delay="0.5s"><span>tel</span><a href="tel:18310364945">18310364945</a></p>
+                <p class="ani" animate-effect="fadeInUp" animate-duration="1s" animate-delay="0.5s"><span>e-mail</span>2627219895@qq.com</p>
+            </div>
+        </li>
+    </ul>
+
+
+    <img src="images/arr.png" id="arrow" />
+</div>
+
+</body>
 </html>
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script src="js/html5_3d_animation.js"></script>
+<script src="js/ctrlAnimate.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
